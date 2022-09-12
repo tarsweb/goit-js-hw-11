@@ -1,0 +1,16 @@
+.header {
+  @extend %section
+}
+
+.search-form {
+  @extend .container;
+
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  };
+
+  text-align: center;
+
+  background-color: blue;
+}
