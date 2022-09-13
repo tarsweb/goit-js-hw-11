@@ -5,15 +5,6 @@ img {
   height: auto;
 }
 
-.container {
-  margin: 0 auto;
-
-  padding: {
-    left: 20px;
-    right: 20px;
-  }
-}
-
 body {
   // font-family: $main-font;
 
@@ -23,4 +14,13 @@ body {
 
   // color: $black;
   // background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+
+  padding: {
+    left: 20px;
+    right: 20px;
+  }
 }

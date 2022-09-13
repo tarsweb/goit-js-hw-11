@@ -1,17 +1,47 @@
-<div class="photo-card">
-  <img src="" alt="" loading="lazy" />
+{{!-- webformatURL - ссылка на маленькое изображение для списка карточек.
+largeImageURL - ссылка на большое изображение.
+tags - строка с описанием изображения. Подойдет для атрибута alt.
+likes - количество лайков.
+views - количество просмотров.
+comments - количество комментариев.
+downloads - количество загрузок. --}}
+
+{{#each this}}
+<div class="photo-card gallery__item" href="{{largeImageURL}}">
+  <img class="gallery__image" src="{{webformatURL}}" alt="{{tags}}" loading="lazy" width=340 height=270/> 
   <div class="info">
     <p class="info-item">
-      <b>Likes</b>
+      <b>Likes</b> <span>{{likes}}</span>
     </p>
     <p class="info-item">
-      <b>Views</b>
+      <b>Views</b> <span>{{views}}</span>
     </p>
     <p class="info-item">
-      <b>Comments</b>
+      <b>Comments</b> <span>{{comments}}</span>
     </p>
     <p class="info-item">
-      <b>Downloads</b>
+      <b>Downloads</b><span>{{downloads}}</span>
     </p>
   </div>
 </div>
+{{/each}}
+
+{{!-- {{#each this}}
+<div class="photo-card gallery__item" href="{{original}}">  
+  <img class="gallery__image" src="{{preview}}" alt="{{description}}" loading="lazy" width=340 height=270/> 
+  <div class="info">
+    <p class="info-item">
+      <b>Likes</b> <span>{{likes}}</span>
+    </p>
+    <p class="info-item">
+      <b>Views</b> <span>{{views}}</span>
+    </p>
+    <p class="info-item">
+      <b>Comments</b> <span>{{comments}}</span>
+    </p>
+    <p class="info-item">
+      <b>Downloads</b><span>{{downloads}}</span>
+    </p>
+  </div>
+</div>
+{{/each}} --}}
