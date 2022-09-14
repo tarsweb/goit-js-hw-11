@@ -2,7 +2,7 @@
 .main {
   @extend %section;
 
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .gallery {
@@ -18,10 +18,6 @@
   margin-right: auto;
 }
 
-// .gallery__thumb {
-//   height: 270px;
-// }
-
 .gallery__item {
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
@@ -34,17 +30,10 @@
   }
 }
 
-// .gallery__image:hover {
-//   // transform: scale(1.03);
-// }
-
 .gallery__image {
-  // max-height: 270px;
-
   height: 270px;
   width: 100%;
   object-fit: cover;
-  // transition: transform var(--animation-duration) var(--timing-function);
 }
 
 .gallery__link {
