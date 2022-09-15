@@ -17,9 +17,14 @@ body {
 }
 
 :root {
+  --main-color: #0000ff;
+  --alternative-color: #ffffff;
+  --main-accent-color : rgba(0, 0, 255, 0.8);
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
 }
+
 .container {
   margin: 0 auto;
 

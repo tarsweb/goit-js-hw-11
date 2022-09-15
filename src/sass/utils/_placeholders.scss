@@ -20,3 +20,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+%tooltip_after {
+  $border-width : 5px;
+
+  content: "";
+  position: absolute;
+  bottom: -$border-width * 2 + 1px;
+
+  border : {
+    width: $border-width;
+    style: solid;
+    color: var(--main-color) transparent transparent transparent
+  };
+}

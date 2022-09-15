@@ -66,9 +66,6 @@ refs.formQuery.addEventListener('submit', (event) => {
 
 });
 
-
-
-
 // buttonLoadMore.refs.button.addEventListener('click', fetchImages);
 buttonLoadMore.refs.button.addEventListener('click', () => {
 
